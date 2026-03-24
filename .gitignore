@@ -1,0 +1,62 @@
+# User-specific Visual Studio files
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build output
+bin/
+obj/
+.ncrunchproject
+.ncrunchsolution
+
+# Environment & secrets — MOST IMPORTANT
+appsettings.Development.json
+appsettings.*.local.json
+*.env
+.env
+.env.local
+.env.*.local
+
+# EF Core
+*.db
+*.sqlite
+*.sqlite3
+Migrations/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+
+# Visual Studio cache
+.vs/
+.vscode/
+.idea/
+
+# OS garbage
+.DS_Store
+Thumbs.db
+*.log
+.gitkeep
+
+# IDE and editor artifacts
+*.swp
+*.swo
+*~
+.project
+.classpath
+
+# TypeScript/Node (if applicable)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Local user settings
+launchSettings.json.local
+
+# ASP.NET Core
+wwwroot/lib/
+Properties/launchSettings.json.local
