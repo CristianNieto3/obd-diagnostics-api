@@ -2,11 +2,20 @@ using PulseOBD.Models;
 
 namespace PulseOBD.Repositories;
 
-public interface IVehiclesRepository
+public interface IVehicleRepository
 {
-   List<Vehicle> void GetAll();
-    Vehicle? void GetById();
-    void Add(Vehicle vehicle);
-    void Update(Vehicle);
-    void Delete(Vehicle);
+    Task<List<Vehicle>> GetAll();
+    Task<Vehicle?> GetById(int Id);
+
+    Task<Vehicle> AddVehicle(Vehicle vehicle);
+
+     Task<bool> UpdateById(int Id, Vehicle vehicle);
+
+     Task<bool> DeleteById(int Id);
+
+
+
+
+
+    
 }
