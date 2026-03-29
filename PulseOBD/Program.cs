@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
 using PulseOBD.Data;
+using PulseOBD.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +10,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 {
     options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")); 
 });
+builder.Services.AddScoped<IVehicleRepository, EfVehicleRepository>();
 
 var app = builder.Build();
 
