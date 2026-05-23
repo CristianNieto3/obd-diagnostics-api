@@ -70,7 +70,6 @@ public class EfVehicleRepository : IVehicleRepository
         }
 
         throw new InvalidOperationException("Vehicle not found");
-            
         
         
     }

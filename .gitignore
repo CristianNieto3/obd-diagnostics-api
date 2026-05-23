@@ -5,6 +5,7 @@
 *.suo
 *.userosscache
 *.sln.docstates
+.env
 
 # Build output
 bin/

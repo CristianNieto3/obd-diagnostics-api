@@ -1,6 +1,39 @@
 @PulseOBD_HostAddress = http://localhost:5050
 
-GET {{PulseOBD_HostAddress}}/weatherforecast/
+GET {{PulseOBD_HostAddress}}/api/vehicle
 Accept: application/json
+
+###
+
+GET {{PulseOBD_HostAddress}}/api/vehicle/1
+Accept: application/json
+
+###
+
+POST {{PulseOBD_HostAddress}}/api/vehicle
+Content-Type: application/json
+
+{
+  "vin": "1HGCM82633A004352",
+  "make": "Honda",
+  "model": "Accord",
+  "year": 2003
+}
+
+###
+
+PUT {{PulseOBD_HostAddress}}/api/vehicle/1
+Content-Type: application/json
+
+{
+  "vin": "1HGCM82633A004352",
+  "make": "Honda",
+  "model": "Accord",
+  "year": 2004
+}
+
+###
+
+DELETE {{PulseOBD_HostAddress}}/api/vehicle/1
 
 ###
